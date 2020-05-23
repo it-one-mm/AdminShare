@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_margin="@dimen/dp_20"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_close"
+            android:layout_gravity="right"
+            android:tint="@color/errorColor"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Slide 1"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+        <EditText
+
+            android:id="@+id/slide1"
+            android:background="@drawable/edtbg"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Slide 1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Slide 2"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+        <EditText
+
+            android:id="@+id/slide2"
+            android:background="@drawable/edtbg"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Slide 2"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Slide 3"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+        <EditText
+
+            android:id="@+id/slide3"
+            android:background="@drawable/edtbg"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Slide 3"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Slide 4"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+        <EditText
+
+            android:id="@+id/slide4"
+            android:background="@drawable/edtbg"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Slide 4"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Slide 5"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+        <EditText
+
+            android:id="@+id/slide5"
+            android:background="@drawable/edtbg"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Slide 4"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnsave"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="30dp"
+                android:layout_weight="1"
+                android:background="@color/successColor"
+                android:text="Save"
+                android:textColor="@color/colorWhite" />
+
+            <Button
+                android:id="@+id/btncancel"
+                android:layout_margin="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Cancel"
+                android:textColor="@color/colorWhite"
+                android:background="@color/errorColor"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

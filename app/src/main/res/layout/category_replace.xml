@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_close"
+            android:layout_gravity="right"
+            android:tint="@color/errorColor"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Find Category"
+            android:textStyle="bold"/>
+        <Spinner
+            android:id="@+id/spFind"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Replace Category"
+            android:textStyle="bold"/>
+        <Spinner
+            android:id="@+id/spReplace"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/rbtonlymovie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Movie Only"/>
+            <RadioButton
+                android:id="@+id/rbtonlyseies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Series Only"/>
+            <RadioButton
+                android:id="@+id/rbtboth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Both"/>
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/replaceAll"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Replace All"
+            android:background="@color/errorColor"
+            android:textColor="@color/colorWhite"/>
+    </LinearLayout>
+</LinearLayout>

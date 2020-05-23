@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android" >
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_close"
+            android:layout_gravity="right"
+            android:tint="@color/errorColor"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Series Name"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+        <EditText
+
+            android:id="@+id/sereisName"
+            android:background="@drawable/edtbg"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Series Name"/>
+        <TextView
+            android:gravity="fill"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Series Image"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/seriesImage"
+            android:background="@drawable/edtbg"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Series Image"/>
+        <TextView
+            android:gravity="fill"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Series Category"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/spcategory"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnsave"
+                android:layout_margin="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Save"
+                android:textColor="@color/colorWhite"
+                android:background="@color/successColor"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/btncancel"
+                android:layout_margin="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Cancel"
+                android:textColor="@color/colorWhite"
+                android:background="@color/errorColor"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

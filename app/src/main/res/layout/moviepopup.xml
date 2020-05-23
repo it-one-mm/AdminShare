@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            xmlns:android="http://schemas.android.com/apk/res/android" >
+
+            <ImageView
+                android:id="@+id/close"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_close"
+                android:layout_gravity="right"
+                android:tint="@color/errorColor"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Movie Name"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/movieName"
+                android:background="@drawable/edtbg"
+                android:paddingLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Movie Name"/>
+           <LinearLayout
+               android:id="@+id/imagePanel"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+               <TextView
+                   android:gravity="fill"
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+                   android:text="Movie Image"
+                   android:textSize="16sp"
+                   android:textStyle="bold"/>
+               <EditText
+                   android:id="@+id/movieImage"
+                   android:background="@drawable/edtbg"
+                   android:paddingLeft="10dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+                   android:hint="Movie Image"/>
+           </LinearLayout>
+            <TextView
+                android:gravity="fill"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Movie Video"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/movieVideo"
+                android:background="@drawable/edtbg"
+                android:paddingLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Movie Video"/>
+           <LinearLayout
+               android:id="@+id/categoryPanel"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+               <TextView
+                   android:gravity="fill"
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+                   android:text="Movie Category"
+                   android:textSize="16sp"
+                   android:textStyle="bold"/>
+               <Spinner
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+                   android:id="@+id/spcategory"/>
+           </LinearLayout>
+           <LinearLayout
+               android:id="@+id/seriesPanel"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+               <TextView
+                   android:gravity="fill"
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+                   android:text="Movie Series"
+                   android:textSize="16sp"
+                   android:textStyle="bold"/>
+               <Spinner
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+                   android:id="@+id/spseries"/>
+           </LinearLayout>
+            <CheckBox
+                android:id="@+id/isEp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Is Episode?"
+                android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btnsave"
+                    android:layout_margin="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Save"
+                    android:textColor="@color/colorWhite"
+                    android:background="@color/successColor"
+                    android:layout_weight="1"/>
+                <Button
+                    android:id="@+id/btncancel"
+                    android:layout_margin="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Cancel"
+                    android:textColor="@color/colorWhite"
+                    android:background="@color/errorColor"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
